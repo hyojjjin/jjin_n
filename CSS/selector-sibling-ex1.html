@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div1+h1 {
+            /*.div1과 h1이 +로 묶였음.
+            h1 중에서 div1을 형제로 두고 있고,
+            바로 직전의 h1을 선택하여 적용*/
+            color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+
+    <div class="div1">
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+
+    <div class="div2">
+        <h1>Lorem, ipsum dolor.</h1>
+    </div>
+
+    <h1>Lorem, ipsum dolor.</h1>
+</body>
+</html>

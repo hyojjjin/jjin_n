@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <img id="img1" onmouseout="off()" onmouseover="on()" src="pic_bulboff.gif" alt="">
+    <script>
+        function on() {
+            //아이디 없을시 console.log('on');
+        document.getElementById("img1").src = 'pic_bulbon.gif';
+         //마우스를 올렸을때 바꾸기
+        }
+        function off() {
+         document.getElementById("img1").src = 'pic_bulboff.gif';
+        }
+        //마우스오버 만들기 나는 왜 안대냐
+    </script>
+</body>
+</html>

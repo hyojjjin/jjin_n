@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*arribute title selctor - []
+        target, tooltip 
+        */
+        [target] {
+            /*[ㅇㅇ] 대괄호 내부에 있는 것들 모두 적용*/
+            border: 5px solid black;
+        }
+
+        [tooltip] {
+            border: 5px dotted blue;
+        }
+
+        [tooltip="link 1"] {
+            /*튤팁이면서 link1의
+            조건을 만족시기는 것에만 적용*/
+            font-size:50px;
+        }
+        a[title] {
+            color:red;
+        }
+            /*a 중에서 타이틀이 있는 것*/       
+
+    </style>
+</head>
+<body>
+    <a href="#" target="_blank">Lorem, ipsum dolor.</a>
+    <a href="#" target="_blank">Ea, veritatis eaque.</a>
+    <a href="#" tooltip="link 1">Adipisci, qui quaerat?</a>
+    <a href="#" tooltip="link 2">Rem, doloribus a.</a>
+    <a href="#" tooltip="link 3">Neque, adipisci! Dolorum?</a>
+    <!--a[title]>lorem3-->
+    <a href="#" title="">Lorem, ipsum dolor.</a>
+    
+
+</body>
+</html>

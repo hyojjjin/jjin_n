@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /*flex의
+
+        다양한 flex는 
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"></a>"
+        사이트 참조*/
+        #div1 {
+            background-color:blue;
+            text-align:right;
+            font-size:50px;
+            width:500px;
+            height:200px;
+                }
+
+        #div2 {
+            width:200px;
+            background-color:yellow
+        }
+
+        #div3 {
+            background-color:red;
+        }
+
+        #div4 {
+            background-color:gold;
+        }
+
+        #div5 {         
+            background-color:linen;
+        }
+
+        .container {
+            display:flex;
+            /*가로로 배열하는 태그*/
+            height:500px;
+            justify-content: space-evenly;
+            /*flex-start - 처음부터 시작
+            flex-end - 끝에서 시작
+            flex-center - 가운데 배열
+            flex-space-between - 양끝 간격없이 아이템만 간격있게
+            space-around - 양끝 조금벌어지고 어아탬들의 간격있게
+            space-evenly - 양끝 간격과 벌어진 간격이 같게*/
+            align-items: flex-end;
+            /*stetch - 기본값
+            flex-star - 시작에서 시작
+            flex-end - 기본값
+            cener - 중앙배열
+            baseline - 가운데 중심열로 텍스트 맞춤*/
+        }
+    </style>
+</head>
+<body>
+    <!--.container>#div$*5>{$}-->
+    <div class="container">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+    </div>
+</body>
+</html>

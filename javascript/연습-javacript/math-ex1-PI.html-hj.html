@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    반지름값 계산하기
+    <input type="number" id="input1"><br>
+    <button onclick="length()">둘레</button>
+    <button onclick="area()">넓이</button>
+    <p id="result"></p>
+    <script>
+        function length() {
+            var r = document.getElementById("input1").value;
+            r=Number(r);
+            var len = 2 * r * Math.PI;
+            document.getElementById("result").innerHTML = len;
+        }
+
+        function area() {
+            var r = document.getElementById("input1").value;
+            r = Number(r);
+            var area = r * r * Math.PI;
+            document.getElementById("result").innerHTML = area;
+        }
+    </script>
+</body>
+</html>

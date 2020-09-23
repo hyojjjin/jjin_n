@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또번호</button>
+    <div id="result"></div>
+
+    <script>
+        function lotto() {
+            var numbers = "";
+
+            //for로 6번 나와야함
+            for (var i = 0; i < 6; i++) {//6번 시도
+            var randomNumber = Math.floor(Math.random() * 45) + 1;
+            numbers += "<div>" + randomNumber + "</div>"; 
+            }
+        
+        document.getElementById("result").innerHTML = numbers;
+
+        }
+    </script>
+//성공해따
+
+</body>
+</html>

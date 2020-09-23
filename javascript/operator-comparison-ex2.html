@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <br>
+    <button onclick="equals()"><i class="fas fa-equals"></i></button>
+    <button onclick="notEqual()"><i class="fas fa-not-equal"></i></button>
+    <button onclick="gt()"><i class="fas fa-greater-than"></i></button>
+    <button onclick="gte()"><i class="fas fa-greater-than-equal"></i></button>
+    <button onclick="lt()"><i class="fas fa-less-than"></i></button>
+    <button onclick="lte()"><i class="fas fa-less-than-equal"></i></button>
+
+    <p id="result"></p>
+
+    <script>
+        function lte() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 <= num2;
+            document.getElementById("result").innerHTML = res;
+        }
+        function lt() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 < num2;
+            document.getElementById("result").innerHTML = res;
+        }
+        function gte() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 >= num2;
+            document.getElementById("result").innerHTML = res;
+        }
+        function gt() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            //num1 = Number(num1); < 얘네가 없으면 사전 순으로 계산함
+            num2 = Number(num2);
+
+            //number가 두개 다 없으면 사전 순으로 계산함. 2 > 11 1보다 2가 더 크기에 2를 더 크게 본다.
+            //만약 num1 만 주석이라면. 숫자가 아닌 것(스트링)과 숫자의 비교 계산인데, 자바스크리브에서는
+            //숫자태그로 인식하여 숫자, 숫자와의 비교를 나감.
+            //두개의 코드값을 일치해줘야지 오류가 없다.
+            
+            var res = num1 > num2;
+            document.getElementById("result").innerHTML = res;
+        }
+        function notEqual() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 != num2;
+            document.getElementById("result").innerHTML = res;
+        }
+        function equals() {
+            var num1 = document.getElementById("input1").value;
+            var num2 = document.getElementById("input2").value;
+            num1 = Number(num1);
+            num2 = Number(num2);
+
+            var res = num1 == num2;
+            document.getElementById("result").innerHTML = res;
+        }
+    </script>
+</body>
+</html>

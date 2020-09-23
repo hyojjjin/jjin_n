@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또 번호 출력</button>
+    <div id="result"></div>
+
+    <div>
+            <div>1</div><div>2</div>
+        </div>
+    <script>
+    function lotto() {
+        var numbers = "";
+
+        //<div>3</div> <div>2</div> <div>45</div> <div>22</div> 랜덤한 숫자로 6개의 디브가 나오도록
+        for (var i = 0; i < 6; i++) {
+            // console.log("실행", i);
+            console.log("----------");
+            console.log(numbers);
+            var randomNumber = Math.floor(Math.random() * 45)+1;
+            numbers += "<div>" + randomNumber + "</div>";
+            console.log(numbers);
+        } //<div>3</div><div>2</div><div>45</div><div>22</div> 랜덤한 숫자로 각 디브스트링이 6번 나오고,
+         // 나온 디브(스트링값임)를 결과값에서 디브사이에 넣었더니 블록라벨로 세로로 출력되는 것.
+
+
+        document.getElementById("result").innerHTML = numbers;
+
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var car = {
+            name: "kia",
+            color: "black",
+            description: function() {
+                //console.log("kia" + "," + "black"); 바로 이름을 알 지 못한다.
+                console.log(this.name + "," + this.color); //디스를 넣으면 바로 가능
+            
+            }
+        }
+        car.description();
+        car.color = "white";
+        car.description();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div1 div {
+            /*.div1 div 두 셀렉터 사이에 스페이스가 들어있다.
+            스페이스 => 자손
+            div => 앞에 작성된 조건의 자손 셀렉터
+            
+            div 엘리멘트 중에서 div1에 포함되어있는 것들에 적용.*/
+        color:blue;
+        font-size:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--.div1>div*3>lorem3-->
+    <div class="div1">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Fugiat, itaque velit!</div>
+        <div>Optio, dignissimos? Consequuntur.</div>
+        <div>
+            <div>Lorem, ipsum dolor.</div>
+            <!--새로운 자식을 생성. div1 엘리먼트의 자손 엘리먼트-->
+        </div>
+    </div>
+
+    <!--.div2>div*3>lorem3-->
+    <div class="div2">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Dicta, eveniet autem?</div>
+        <div>Nisi, esse fugiat?</div>
+    </div>   
+
+</body>
+</html>

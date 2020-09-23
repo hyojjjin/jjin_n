@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .number {
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 50px;
+            font-weight: bold;
+            border-radius: 50%;
+            text-align: center;
+            /*구슬 모양에 텍스트 넣기 */
+        }
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">이번주 로또 당첨번호</button>
+    <div class="number" id="num1"></div>
+    <div class="number" id="num2"></div>
+    <div class="number" id="num3"></div>
+    <div class="number" id="num4"></div>
+    <div class="number" id="num5"></div>
+    <div class="number" id="num6"></div>
+
+    <script>
+        function getRandomNumber() {
+            return Math.floor(Math.random()*45) + 1;
+        }
+
+        function lotto() {
+           document.getElementById("num1").innerHTML = getRandomNumber()
+           document.getElementById("num2").innerHTML = getRandomNumber()
+           document.getElementById("num3").innerHTML = getRandomNumber()
+           document.getElementById("num4").innerHTML = getRandomNumber()
+           document.getElementById("num5").innerHTML = getRandomNumber()
+           document.getElementById("num6").innerHTML = getRandomNumber()
+        }
+        
+        
+
+
+
+        // function lotto() {
+           // var r1 = getRandomNumber(); //1부터 45사이의 랜덤한 숫자
+            // document.getElementById("num1").innerHTML = r1;
+
+        // var r2 = getRandomNumber() //1부터 45사이의 랜덤한 숫자
+       //     document.getElementById("num2").innerHTML = r2;
+
+       //     var r3 = getRandomNumber() //1부터 45사이의 랜덤한 숫자
+       //     document.getElementById("num3").innerHTML = r3;
+
+       //     var r4 = getRandomNumber() //1부터 45사이의 랜덤한 숫자
+       //     document.getElementById("num4").innerHTML = r4;
+
+       //     var r5 = getRandomNumber() //1부터 45사이의 랜덤한 숫자
+       //     document.getElementById("num5").innerHTML = r5;
+
+       //     var r6 = getRandomNumber() //1부터 45사이의 랜덤한 숫자
+       //     document.getElementById("num6").innerHTML = r6;
+        //}
+
+
+       //function lotto() {
+         //   var r1 = Math.floor(Math.random()*45) + 1; //1부터 45사이의 랜덤한 숫자
+          //  document.getElementById("num1").innerHTML = r1;
+
+          //  var r2 = Math.floor(Math.random()*45) + 1; //1부터 45사이의 랜덤한 숫자
+          //  document.getElementById("num2").innerHTML = r2;
+
+          //  var r3 = Math.floor(Math.random()*45) + 1; //1부터 45사이의 랜덤한 숫자
+         //   document.getElementById("num3").innerHTML = r3;
+
+         //   var r4 = Math.floor(Math.random()*45) + 1; //1부터 45사이의 랜덤한 숫자
+          //  document.getElementById("num4").innerHTML = r4;
+
+         //   var r5 = Math.floor(Math.random()*45) + 1; //1부터 45사이의 랜덤한 숫자
+         //   document.getElementById("num5").innerHTML = r5;
+
+          //  var r6 = Math.floor(Math.random()*45) + 1; //1부터 45사이의 랜덤한 숫자
+         //   document.getElementById("num6").innerHTML = r6;
+     //   }
+    </script>
+</body>
+</html>

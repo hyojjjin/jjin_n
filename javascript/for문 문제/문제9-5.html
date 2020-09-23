@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        var txt ="";
+        for (var i=0; i<5; i++) {
+            for (var j=0; j<=i; j++) {
+            txt += "#";
+            }
+            for (var z=5; z>i; z--){
+                txt +="*";
+            }
+            txt += "<br>"
+            console.log(txt); 
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .div1>div {
+            /*이번에는 .div1와 div 사이에 >가 들어가 있다.
+            .div 셀렉터의 자식 div 셀렉터만을 선택
+            */
+
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!--.div1>div*3>lorem3-->
+    <div class="div1">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Voluptate, exercitationem voluptatem!</div>
+        <div>Pariatur, voluptas dolore!</div>
+        <div>
+            <div>자손Lorem, ipsum dolor.</div>
+            <!--검사시 확인해보면 스타일에 데코레이션이 없음.
+                얘는 부모가 밑이라서 밑줄이 들어간 것임
+                손자라서 셀렉터에 의해선 직접적으로 영향x-->
+        </div>
+    </div>
+
+    <!--.div2>div*3>lorem3-->
+    <div class="div2">
+        <div>Lorem, ipsum dolor.</div>
+        <div>Natus, eos quisquam?</div>
+        <div>Officiis, voluptates. Ipsum!</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <!--가위 바위 보 게임만들기-->
+    <button onclick="resGame()"><i class="fas fa-hand-rock"></i></button>
+    <button onclick="resGame()"><i class="fas fa-hand-paper"></i></button>
+    <button onclick="resGame()"><i class="fas fa-hand-scissors"></i></button>
+
+    <br>
+
+
+    <img src="" alt="" id="computer">
+    <!--컴퓨터는 랜덤으로 가위바위보가 나옴 -->
+
+    <!--게임의 결과를 알려주기-->
+    <p id="result"></p>
+
+
+
+    <script>
+        function resGame() {
+            var r = Math.floor(Math.random()*3) + 1
+            var fileName = "rps" + r + ".png"; 
+            document.getElementById("computer").src = fileName; // 컴퓨터에 넣어주는 거
+
+            document.getElementById("result").innerHTML = "이겼습니다";
+            document.getElementById("result").innerHTML = "비겼습니다";
+            document.getElementById("result").innerHTML = "졌습니다."; //이거 중에 한개만 실행이 되어야함
+
+            
+        }
+    </script>
+</body>
+</html>

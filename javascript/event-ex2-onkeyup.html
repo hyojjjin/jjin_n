@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input onkeyup="show()" type="text" id="input1">
+    <!--눌렀다 떌때 나오도록 onkeyup-->
+    <p id="result"></p>
+    <script>
+        function show() {
+        //1. console.log(keyup!);
+        //작성된 값이 고대로
+
+        //2. var txt = document.getElementById("input1").value;
+        // console.log(txt);
+        //작성된 값이 고대로 나옴
+
+        //3.
+           var txt = document.getElementById("input1").value;
+           document.getElementById("result").innerHTML = txt;
+               //console은 안썼으니까 없고 텍스트값만 나옴
+
+        }
+    </script>
+</body>
+</html>

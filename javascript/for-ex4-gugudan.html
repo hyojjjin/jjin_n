@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="number" id="input1">
+    <button onclick="show()">구구단!</button>
+    <div id="result"></div>
+    <script>
+        function show () {
+            var num = documen.getElementById("input1").value;
+            num = Number(num);
+            var txt = "";
+
+            for (var i = 1; i <= 9; i++) {
+            txt += num + " &times;" + i + " = " + (num*i) + "<br>";
+
+      // for (var i = 1; i <= 9; i++) {
+         //   txt += "2 &times;" + i + " = " + (2*i) + "<br>";
+       // } 2단 나오는 것
+            }
+
+        document.getElementById("result").innerHTML = txt;
+    
+        
+        }
+
+        // 안된당 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ 다시 해보기
+
+   
+    </script>
+</body>
+</html>

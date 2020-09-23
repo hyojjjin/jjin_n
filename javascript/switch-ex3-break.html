@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+       
+        console.log("시작");
+
+        var age = 3;
+
+        switch (age) {
+            case 3:
+            console.log("실행 3");
+                break;  //break을 실수로 뻈을때, case 2까지도 실행이됨.
+            case 2:
+                console.log("실행 2");
+                 break; //전부다 삭제되면 default까지 실행됨.
+            default: 
+                console.log("기본");
+                 break; //어차피 여기에서 종료가 되니까. 있어도되고 없어도됨.
+        
+            
+        }
+    </script>
+</body>
+</html>

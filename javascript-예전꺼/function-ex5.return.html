@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var a = "3";
+        var b = Number(a); //a라는 값이 3으로 치환. var b = 3이됨
+
+        console.log(b);
+
+        function double(num) {
+            var num2 = num *2;
+            return num2; // 1. 함수 종료
+                         // 2. 실행한 곳으로 값 변환(return)
+            
+            console.log("함수 실행중");
+
+        }
+        var c = 4;
+        var d = double(c); // 8로 치환된 결과를 얻기 위하여.
+
+        console.log(d);
+    </script>
+</body>
+</html>
