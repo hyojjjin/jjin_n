@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2">Suscipit et ea quaerat culpa!</h1>
+    <h1 id="head3">Necessitatibus optio sint distinctio excepturi.</h1>
+    <h1 id="head4">Dolore atque consequuntur totam ipsa!</h1>
+    <h1 id="head5">Sapiente et minus minima illum.</h1>
+    <script>
+        var head1 = document.getElementById("head1");
+
+        var heads = document.getElementsByTagName("h1"); //태그네임으로 여러개를 가지고올 수 있다.
+        //배열처럼 사용할 수 있음
+        console.log(heads.length);
+
+        for (var i=0; i<heads.length; i++) {
+            console.log(heads[i].innerHTML)
+        }
+    </script>
+</body>
+</html>
+
+//d왜 안댕
