@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            border : 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--tabel>tr*5>td*6>lorem1-->
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Cum?</td>
+            <td>A?</td>
+            <td>Id!</td>
+            <td>Obcaecati!</td>
+            <td>Delectus?</td>
+        </tr>
+        <tr>
+            <td>Dignissimos.</td>
+            <td>Nulla!</td>
+            <td>Reiciendis.</td>
+            <td>Ad.</td>
+            <td>Reiciendis!</td>
+            <td>Quia!</td>
+        </tr>
+        <tr>
+            <td>Iusto.</td>
+            <td>Explicabo.</td>
+            <td>Officia!</td>
+            <td>Reprehenderit.</td>
+            <td>Repellat.</td>
+            <td>Blanditiis?</td>
+        </tr>
+        <tr>
+            <td>Nihil!</td>
+            <td>Modi?</td>
+            <td>Et.</td>
+            <td>Cupiditate.</td>
+            <td>Fuga!</td>
+            <td>Similique!</td>
+        </tr>
+        <tr>
+            <td>Atque!</td>
+            <td>Fugit!</td>
+            <td>Animi!</td>
+            <td>Architecto!</td>
+            <td>Quam!</td>
+            <td>Tenetur.</td>
+        </tr>
+    </table>
+    <script>
+        //$("tr:odd").hide(); //2,4 줄 사라짐
+        $("tr:nth-child(2n+1)").hide(); //수도 클래스 2n. 숫자를 넣을 수도 있다.
+
+    </script>
+</body>
+</html>

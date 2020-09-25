@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head">Lorem.</h1>
+
+    <script>
+  //      $("#head1").hide();
+        // 돔 h1가 완성되기 전에 만들어지면 아무 일도 안생기다. h1보다 위에있으면 아무일도 안생김.
+      //  $("#head1").click(function() {
+     //       console.log("hello");
+     //   });
+
+        $(document).ready(function() {
+            console.log("dom loaded") 
+            $("#head1").hide(); //돔이 일어난 뒤에 함수가 진행됨
+            $("#head1").click(function() {
+                console.log("hello");
+            });     
+            
+        });
+
+        //쌤꺼 다시 보깅
+    </script>
+</body>
+</html>
