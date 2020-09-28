@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+        });
+    </script>
+</head>
+<body>
+    <input type="text" id="input1"><br>
+    <input type="text" id="input2"><br>
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+    <p id="result1"></p>
+    <br>
+
+    <input type="text" id="input3"><br>
+    <input type="text" id="input4"><br>
+    <button onclick="subtract()"><i class="fas fa-minus"></i></button>
+    <p id="result2"></p>
+    <br>
+
+    <input type="text" id="input5"><br>
+    <input type="text" id="input6"><br>
+    <button onclick="multiply()"><i class="fas fa-times"></i></button>
+    <p id="result3"></p>
+    <br>
+
+    <input type="text" id="input7"><br>
+    <input type="text" id="input8"><br>
+    <button onclick="divide()"><i class="fas fa-divide"></i></button>
+    <p id="result4"></p>
+    
+    <script>
+        function add() {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            var result = Number(a) + Number(b);
+            document.getElementById("result1").innerHTML = result;
+            }
+
+        function subtract() {
+            var c = document.getElementById("input3").value;
+            var d = document.getElementById("input4").value;
+            var result = Number(c) - Number(d);
+            document.getElementById("result2").innerHTML = result;
+            }
+
+        function multiply() {
+            var e = document.getElementById("input5").value;
+            var f = document.getElementById("input6").value;
+            var result = Number(e) * Number(f);
+            document.getElementById("result3").innerHTML = result;
+        }
+
+        function divide() {
+            var g = document.getElementById("input7").value;
+            var h = document.getElementById("input8").value;
+            var result = Number(g) / Number(h);
+            document.getElementById("result4").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
