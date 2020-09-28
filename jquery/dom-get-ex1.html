@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        //text 요소의 텍스트 가져오기
+        //html 요소의 html 함수 가져오기
+        //val 입력 필드의 값을 반환하기
+
+        $(document).ready(function() {
+            var t = $("#head1").text(); //텍스트 정보만 얻어오기
+            var h = $("#head2").html(); //태그까지 전부 다 얻어오기
+            
+            console.log(t);
+            console.log(h);
+
+            var v = $("#input1").val();
+            console.log(v); //(ready 안에 있는 함수들이니까 돔이 시작되면서 바로 시작된다.)
+
+            $("#input1").keyup(function() {
+                var val = $(this).val();
+                console.log(val);
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem, <span>ipsum</span> dolor.</h1>
+    <h1 id="head2">Placeat, <span>eaque</span> necessitatibus.</h1>
+    <h1 id="head3">Porro, ex veritatis?</h1>
+
+    <input type="text" id="input1" value="korea">
+</body>
+</html>

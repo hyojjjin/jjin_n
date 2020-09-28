@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").append("<p>hello</p>"); // 텍스트 뒤에 삽입됨
+            $("#div2").append("<p></p>");
+            $("#div3").append("<p />"); //<p /> : 태그 안에 아무 것도 없으면
+            
+            var newPara = $("<p />"); //트리는 아직 수정이 안되고 새로운 p 엘리먼트 객체가 생성            $("#div4").append();
+            newPara.text("hello"); //텍스트를 삽입하고 돔에 붙여진다
+            $("#div4").append(newPara);
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div2">Lorem, ipsum dolor.</div>
+    <div id="div3">Lorem, ipsum dolor.</div>
+    <div id="div4">Lorem, ipsum dolor.</div>
+</body>
+</html>

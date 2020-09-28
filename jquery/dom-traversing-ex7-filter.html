@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("div").first().css("border", "5px solid green");//첫번째 디브 엘리먼트
+            $("div").last().css("border", "5px solid blue"); //마지막 디브 엘리먼트
+
+            $("div").eq(0).css("padding", "5px");
+            $("div").eq(1).css("padding", "7px");
+            $("div").eq(2).css("padding", "9px");
+            $("div").eq(3).css("padding", "11px");
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus aliquam ipsa aut eveniet voluptatibus omnis quis, sapiente nisi nemo, atque eum voluptates dignissimos sunt provident pariatur, similique placeat quaerat.</div>
+        </div>
+    </div>
+
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore optio possimus omnis libero fugiat maxime repellendus cupiditate adipisci, ratione asperiores tempore placeat! Repellat, quis molestiae explicabo modi quas odio!</div>
+</body>
+</html>

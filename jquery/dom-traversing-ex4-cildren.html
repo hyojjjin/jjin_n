@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("div").children().css("border", "5px solid green");
+            $("div").children(".note").css("color", "yellow"); //노트 클래스만 가진 자식만
+            $("div>.note").css("background-color", "black");
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <p class="note"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo qui, deleniti at quam atque reiciendis, porro numquam eius animi cumque soluta non voluptas cupiditate esse distinctio est reprehenderit ad ipsum!</span></p>
+    </div>
+    <div>
+        <p class="note"><span>Debitis repellendus maiores ipsa facilis non error doloremque quas sunt fuga! Deleniti omnis autem exercitationem, aut laboriosam recusandae illo voluptas, non quidem quos et, nobis inventore ratione accusamus eveniet optio?</span></p>
+    </div>
+    <div>
+        <p><span>Incidunt sunt rerum repellat provident ex soluta placeat accusamus atque! Consectetur labore ab, esse, vel quasi aliquam ducimus in error quibusdam atque temporibus enim quod ea fugiat possimus! Ipsa, pariatur.</span></p>
+    </div>
+</body>
+</html>
